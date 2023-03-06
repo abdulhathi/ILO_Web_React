@@ -1,0 +1,23 @@
+
+.heading--container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.btn--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading--container {
+    justify-content: left;
+    text-align: left;
+  }
+  .btn--container {
+    justify-content: left;
+  }
+}

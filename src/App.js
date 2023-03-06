@@ -1,25 +1,30 @@
+import { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.styles.scss'
+import BooksLibrary from './components/books-library/books-library.component'
+import Header from './components/header/header.component'
+import Navbar from './components/navbar/navbar.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { books: [] };
+  }
+
+  render() {
+    return (
+      <div className='app-container'>
+        <Navbar></Navbar>
+        <header className='app-header'>
+          {/* <h1 className='h1--primary'>Islamic Books Library</h1> */}
+          <Header></Header>
+        </header>
+        <main className='main-container'>
+          <BooksLibrary></BooksLibrary>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;

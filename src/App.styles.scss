@@ -1,5 +1,20 @@
+.app-container {
+  
+}
+.app-header {
+  
+}
+
+.main-container {
+
+}
+
+.footer-container {
+  text-align: center;
+}
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -9,7 +24,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 100s linear;
   }
 }
 

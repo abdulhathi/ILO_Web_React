@@ -1,0 +1,19 @@
+/* Hero styles start */
+.hero--container {
+  max-width: 500px;
+  max-height: 500px;
+  background-color: #0003d0d0;
+  min-height: 500px;
+  position: relative;
+}
+.icon {
+  width: 50px; 
+  height: 50px;
+  margin: .5em;
+  fill: var(--color--light);
+}
+.icon--desktop {
+  position: absolute;
+  top: 50px;
+}
+/* Hero styles end */
