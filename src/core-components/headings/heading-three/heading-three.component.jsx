@@ -4,7 +4,7 @@ import "./heading-three.styles.scss";
 class HeadingThree extends Component {
   render() {
     const { text, isPrimary } = this.props;
-    console.log("HeadingThree", isPrimary);
+    // console.log("HeadingThree", isPrimary);
     return (
       <h3
         className={
